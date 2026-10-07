@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareConnect - Doctor Appointment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CareConnect</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div>
+        <h1>Book Your Doctor Appointment</h1>
+        <p>Find the right doctor and book your appointment easily.</p>
+        <a href="#appointment" class="btn">Book Appointment</a>
+    </div>
+</section>
+
+<section id="doctors" class="section">
+    <h2>Our Doctors</h2>
+
+    <div class="doctor-container">
+
+        <div class="doctor-card">
+            <div class="doctor-icon">👨‍⚕️</div>
+            <h3>Dr. Rahul Sharma</h3>
+            <p>Cardiologist</p>
+            <p>Experience: 10 Years</p>
+        </div>
+
+        <div class="doctor-card">
+            <div class="doctor-icon">👩‍⚕️</div>
+            <h3>Dr. Priya Mehta</h3>
+            <p>Dermatologist</p>
+            <p>Experience: 8 Years</p>
+        </div>
+
+        <div class="doctor-card">
+            <div class="doctor-icon">👨‍⚕️</div>
+            <h3>Dr. Amit Patel</h3>
+            <p>General Physician</p>
+            <p>Experience: 12 Years</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="appointment" class="section appointment-section">
+
+    <h2>Book an Appointment</h2>
+
+    <form id="appointmentForm">
+
+        <label>Patient Name</label>
+        <input type="text" id="patientName" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label>Select Doctor</label>
+        <select id="doctor" required>
+            <option value="">Choose Doctor</option>
+            <option>Dr. Rahul Sharma - Cardiologist</option>
+            <option>Dr. Priya Mehta - Dermatologist</option>
+            <option>Dr. Amit Patel - General Physician</option>
+        </select>
+
+        <label>Appointment Date</label>
+        <input type="date" id="date" required>
+
+        <label>Appointment Time</label>
+        <select id="time" required>
+            <option value="">Choose Time</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+        </select>
+
+        <label>Reason for Visit</label>
+        <textarea id="reason" placeholder="Enter reason for appointment"></textarea>
+
+        <button type="submit" class="btn">Book Appointment</button>
+
+    </form>
+
+    <div id="confirmation"></div>
+
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: +91 98765 43210</p>
+    <p>📧 Email: careconnect@example.com</p>
+    <p>📍 Mumbai, Maharashtra, India</p>
+</section>
+
+<footer>
+    <p>© 2026 CareConnect Doctor Appointment System</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
