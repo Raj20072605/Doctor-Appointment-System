@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f9fc;
+    color: #333;
+}
+
+header {
+    background: #087f8c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(120deg, #dff8fa, #ffffff);
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 650px;
+    color: #075c66;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #087f8c;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #065f69;
+}
+
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section h2,
+.contact h2 {
+    font-size: 32px;
+    color: #075c66;
+    margin-bottom: 35px;
+}
+
+.doctor-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.doctor-card {
+    background: white;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card h3 {
+    margin: 15px 0 10px;
+    color: #075c66;
+}
+
+.doctor-card p {
+    margin: 8px;
+}
+
+.doctor-icon {
+    font-size: 60px;
+}
+
+.appointment-section {
+    background: #eaf8fa;
+}
+
+form {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+form .btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#confirmation {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #d9f5df;
+    color: #176b2c;
+    display: none;
+    text-align: left;
+}
+
+.contact {
+    text-align: center;
+    padding: 60px 8%;
+    background: white;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+footer {
+    background: #075c66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+}
